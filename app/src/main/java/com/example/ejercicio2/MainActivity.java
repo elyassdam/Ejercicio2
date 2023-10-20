@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
-
+MiToastPersonalizado toast=new MiToastPersonalizado();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,22 +19,9 @@ public class MainActivity extends AppCompatActivity {
         miBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Me hicieron clic", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-    public class MiToastPersonalizado {
+                toast.mostrarMensaje(MainActivity.this, "Me hicieron clic");
+            } });
 
 
-        public  void mostrarMensaje(Context context, String message) {
-// Inflar el diseño personalizado
-            View view = LayoutInflater.from(context).inflate(R.layout.activity_main, null);
-            // Crear y mostrar el Toast personalizado
-            Toast toast = new Toast(context);
-            toast.setView(view);
-            toast.setDuration(Toast.LENGTH_SHORT);
-            toast.show();
-
-        }
-    }
+}
 }

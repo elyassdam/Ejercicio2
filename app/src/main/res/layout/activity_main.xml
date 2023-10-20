@@ -16,24 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="top"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-69dp">
 
-        <TextView
-            android:id="@+id/customToastMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginBottom="580dp"
-            android:background="#333333"
-            android:padding="16dp"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
