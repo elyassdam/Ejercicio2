@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ejercicio2"
 include(":app")
- 
+include(":ejercicio3")
+include(":ejercicio4")

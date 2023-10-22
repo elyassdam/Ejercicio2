@@ -16,39 +16,50 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/aire"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="estaChekeado"
-            android:text="Aire" />
-
-        <RadioButton
-            android:id="@+id/tierra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tierra" />
-
-        <RadioButton
             android:id="@+id/agua"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000080"
             android:text="Agua" />
 
+         <RadioButton
+             android:id="@+id/tierra"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#8B4513"
+             android:text="Tierra" />
 
-    </RadioGroup>
+         <RadioButton
+             android:id="@+id/aire"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#808080"
+             android:text="Aire" />
+
+
+         <ImageView
+             android:id="@+id/miImagen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+     </RadioGroup>
 
     <TextView
         android:id="@+id/Opcion"
-        android:layout_width="173dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="48dp"
-        android:text="SELECCIONA UNA OPCIÓN"
+        android:text="SELECCIONA TU ANIMAL FAVORITO "
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.433" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
