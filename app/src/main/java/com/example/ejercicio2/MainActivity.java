@@ -20,9 +20,6 @@ MiToastPersonalizado toast=new MiToastPersonalizado();
             @Override
             public void onClick(View view) {
                 toast.mostrarMensaje(MainActivity.this, "Me hicieron clic");
-
             } });
-
-
-}
+    }
 }
